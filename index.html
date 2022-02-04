@@ -5,38 +5,48 @@
     <meta charset=utf-8/>
     <title>hw-03</title>
     <style> 
-        h1 {text-align: center;}
+        h1 {text-align: center;
+        font-family: Arial;}
+        p {font-family: Arial;}
         .flex-container {
   display: flex;
-  justify-content: space-between;
    flex-wrap: wrap;
-   background-color: orangered;
-}
-lex-container::before {
-  content: "";
+   background-color: whitesmoke;
+   display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+  justify-content: space-between;
 }
 
-flex-container::after {
-  content: "";
-}
 .flex-container > div {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+  border: 5px solid black;
+  grid-gap: 20px;
 }
-}
-    </style>
+
+
+ </style>
 
 </head>
 
 <body>
 <h1>HTML+CSS & Marks+Channels</h1>
 <div class="flex-container">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div><img src="img/bubble_and_pie_chart.png">
+
+    <p>The data is not specified but we can say it is quantitative. The marks for this chart are the areas and the channels are the colors, size, and tilt. The marks are used as items.</p></div>
+  <div><img src="img/bump_chart.png">
+    <p>The data type is ordinal because it has years on one axis and ordered rank on the other.The mark on this chart are points and lines. The channels are color as well as position. The marks are used as nodes and links because it shows the relationship between year and rank.</p></div>
+  <div><img src="img/mind_map.png">
+    <p> The data type is categorical attribute. The marks points (text) and the lines which show the relationship. The channels are the colors and position. The marks are used as nodes and links</div>
+  <div><img src="img/stacked_bar_chart.png">
+    <p> Each category has a quantitative attribute. The marks are the area. The three channels being used are the position, colors, and length. The marks are used as items. </div>
+</div>
+<div>
+    <div style="width:500px;height:100px;border:1px solid red;background: red;"></div>
 </div>
 
 
