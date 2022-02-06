@@ -6,7 +6,6 @@
 
 .wrapper {
   display: flex;
-  display: grid;
    flex-wrap: wrap;
    flex-flow: row;
  justify-content:space-evenly; 
