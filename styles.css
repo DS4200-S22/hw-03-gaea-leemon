@@ -4,23 +4,48 @@
   p {font-family: Arial;}
       
 
+/* Container for flexboxes */
 .wrapper {
+
   display: flex;
-   flex-wrap: wrap;
-   flex-flow: row;
- justify-content:space-evenly; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+   grid-gap: 20px;
+
 
 
 }
 
-.wrapper > div {
-  background-color: #f1f1f1;
+/* Create four equal columns */
+.box {
+  width: 25%;
+  padding: 20px;
   background-color: whitesmoke;
   margin: 10px;
-  padding: 20px;
-  border: 5px solid black;
-  grid-gap: 20px;
-  
+  border: 10px solid black;
 }
-img { max-width: 100%; }
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992) {
+  .box {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-grow: 0;
+    flex-direction: column;
+   
+
+  }
+}
+
+
+
+img {
+  width: 100%;
+}
+
 
