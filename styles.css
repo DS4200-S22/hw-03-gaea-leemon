@@ -1,5 +1,9 @@
 
   h1 {text-align: center;
+    font-size: 50;
+    font-family: Arial;}
+    h2 {text-align: center;
+    font-size: 30;
     font-family: Arial;}
   p {font-family: Arial;}
       
@@ -23,7 +27,6 @@
   margin: 10px;
   border: 7px solid black;
 }
-
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992) {
   .box {
@@ -46,5 +49,29 @@
 img {
   width: 100%;
 }
+
+.my-rect {
+  fill: skyblue;
+}
+
+.my-rect:hover {
+  fill: darkblue;
+}
+
+.my-circle {
+  fill: seagreen;
+}
+
+.my-circle:hover {
+  fill: darkolivegreen;
+}
+
+ul.a {
+  list-style-type: circle;
+  text-align:center; 
+  list-style-position:inside;
+  font-family: Arial;
+}
+
 
 
